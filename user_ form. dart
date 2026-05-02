@@ -1,0 +1,27 @@
+ // Mohammed from Kuwait - First Dart Program
+// Learning Flutter for Android - April 2026
+// Dream: Google Engineer
+import 'dart:io';
+
+void main() {
+  print('=== Google User Data Form ===');
+  
+  print('Please enter your first name: ');
+  String? firstName = stdin.readLineSync();
+  
+  print('Please enter your age: ');
+  int age = int.parse(stdin.readLineSync()!);
+  
+  print('Please enter your height in meters:');
+  double height = double.parse(stdin.readLineSync()!);
+  
+  print('Are you a student? (true or false):');
+  bool isStudent = bool.parse(stdin.readLineSync()!);
+  
+  print('\n=== Your Data ===');
+  print('Name: $firstName');
+  print('Age: $age years old');
+  print('Height: $height meters');
+  print('Student: $isStudent');
+  print('\nDream: Google Engineer from Kuwait 🇰🇼');
+}
